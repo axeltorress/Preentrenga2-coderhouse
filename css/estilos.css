@@ -5,6 +5,10 @@ box-sizing: border-box;}
 
 
 
+
+
+
+
 @font-face {
   font-family: "nav" ;
   src: url(../assets/fonts/Cream\ Cake.otf);
@@ -107,6 +111,9 @@ text-align: center;
     height: 250px;
     margin-top: 170px;
     margin-left: 110px;
+    border-radius: 30px;
+    box-shadow: 3px 4px 6px black;
+    
 }
 
 .links-servicios a{
@@ -149,7 +156,10 @@ text-align: center;
         background-color: rgb(179, 43, 43);
     }
 
+.servicios a{
+display: none;
 
+}
 
 /* Pagina Nosotros */
 
@@ -291,6 +301,222 @@ height: 30px;
     height: 30px;
     
 }
+
+
+
+/* mediaq desktop */
+@media screen and (max-width: 1200px){
+
+    .navbar-brand{
+        margin-left: 20px; }
+
+        .servicios img{
+            margin-left: 60px;
+        }
+.links-servicios a{
+margin-left: 200px;
+
+}
+.corte{
+
+margin-right: 130px;
+ 
+}
+.color{
+    margin-right: 115px;
+}
+
+
+}
+
+@media screen and (max-width: 1100px){
+
+.servicios{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+    .servicios img{
+        width: 107vh;
+        height: 67vh;
+    }
+
+    main {
+        grid-area: main;
+        max-height: 90vh;
+        overflow: auto;
+        margin: 0;
+      }
+      
+      footer {
+        grid-area: footer;
+        height: 20vh;
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+}        
+
+
+
+
+
+}
+
+/* mediaq para tablet */
+@media screen and (max-width: 768px){
+
+   
+.indexdiv img{
+width: 107vh;
+height: 67vh;
+
+    }
+.navbar-brand{
+margin-left: 15px;
+    }
+.container-fluid{
+margin-left: 10px;
+   }
+   .navbar{
+    margin-bottom: 20px;
+   }
+    .menu{
+        background-color: rgb(184, 37, 37);
+    }
+
+    .servicios{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .servicios img{
+        width: 160px;
+        height: 110px;
+        margin: 0;
+        margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+        }
+
+        .servicios a{
+
+            
+            list-style: none;
+color: white;
+text-decoration: none;
+display: flex;
+        }
+        .links-servicios{
+            display: none;
+        }
+        main {
+            grid-area: main;
+            max-height: 90vh;
+            overflow: auto;
+            margin: 0;
+          }
+          
+          footer {
+            grid-area: footer;
+            height: 20vh;
+            grid-area: footer;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0;
+}        
+       
+        
+        
+   
+  }
+
+  /* mediaq para celular */
+
+@media screen and (max-width: 480px){
+    /* responsive index */
+    .indexdiv img{
+        width: 80vh;
+        height: 50vh;
+            }
+       
+            
+/* responsive servicios
+ */
+   .servicios{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+
+
+   }         
+
+   .servicios img{
+    width: 190px;
+    height: 140px;
+    margin: 0;
+    
+   
+
+   }         
+
+.links-servicios a{
+display: none;
+
+margin: 0px;
+
+ }
+
+ main {
+    grid-area: main;
+    max-height: 90vh;
+    overflow: auto;
+    margin: 0;
+  }
+  
+  footer {
+    grid-area: footer;
+    height: 20vh;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+
+    
+  }
+  .servicios a{
+list-style: none;
+color: white;
+text-decoration: none;
+display: flex;
+
+  }
+
+  
+    
+
+
+}
+
+
+
+
 
 
 
