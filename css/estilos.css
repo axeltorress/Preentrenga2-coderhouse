@@ -7,7 +7,7 @@ box-sizing: border-box;}
 
 @font-face {
   font-family: "nav" ;
-  src: url(../assets/fonts/StaytrueDemo-Italic.otf);
+  src: url(../assets/fonts/Cream\ Cake.otf);
 }
 
 /*  */
@@ -24,7 +24,7 @@ grid-area: header;
 background-color: rgb(250, 86, 86);
 height: 22vh;
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         flex-direction: column;
         justify-items: center;
         text-align: center;
@@ -33,8 +33,16 @@ height: 22vh;
 }
 
 
+.nav-link {
+    width: 100px;
+   
+    font-family: "nav";
+    font-size: 25px;
+  }
+
+
 header img{
-    height: 15vh;
+    height: 13vh;
     margin: 0;
 
     }
@@ -48,10 +56,13 @@ margin-bottom: 50px;
     
 .container-fluid a{
 color: white;
-font-style: italic;
-
+font-family: "nav";
+font-size: 25px;
 
 }
+
+
+
 
 /* main */
 main{
