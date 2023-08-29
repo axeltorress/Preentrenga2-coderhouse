@@ -1,523 +1,813 @@
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;}
-
-
-
-
-
-
-
-@font-face {
-  font-family: "nav" ;
-  src: url(../assets/fonts/Cream\ Cake.otf);
-}
-
-/*  */
-body{
-   
-    display: grid;
-    grid-template-rows: 22vh 45vh 45vh 8vh;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "main" "footer";
-}
-/* header */
-header{
-grid-area: header;
-background-color: rgb(250, 86, 86);
-height: 22vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    
+    
+    
+    
+    
+    
+    
+    @font-face {
+      font-family: "nav" ;
+      src: url(../assets/fonts/Cream\ Cake.otf);
+    }
+    
+    /*  */
+    body{
+       
+        display: grid;
+        grid-template-rows: .3fr 1.5fr 1.5fr .3fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "main" "main" "footer";
+    }
+    /* header */
+    header{
+    grid-area: header;
+    background-color: rgb(250, 86, 86);
+    height: .3fr;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-items: center;
+            text-align: center;
+            list-style: none;
+    
+    }
+    
+    
+    .nav-link {
+        width: 100px;
+       
+        font-family: "nav";
+        font-size: 25px;
+      }
+    
+    
+    header img{
+        height: 13vh;
+        margin: 0;
+    
+        }
+    
+    .container-fluid{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        justify-items: center;
-        text-align: center;
-        list-style: none;
-
-}
-
-
-.nav-link {
-    width: 100px;
-   
+    margin-bottom: 50px;
+    
+    }
+        
+    .container-fluid a{
+    color: white;
     font-family: "nav";
     font-size: 25px;
-  }
-
-
-header img{
-    height: 13vh;
-    margin: 0;
-
-    }
-
-.container-fluid{
-    display: flex;
-    flex-direction: column;
-margin-bottom: 50px;
-
-}
     
-.container-fluid a{
-color: white;
-font-family: "nav";
-font-size: 25px;
-
-}
-
-
-
-
-/* main */
-main{
-grid-area: main;
-background-color: lightcoral;
-height: 90vh;
-
-}
-/* Pagina index */
-.indexmain{
-
-    display: flex;
-justify-content: center;
-    align-items: center;
-}
-
-.indexmain p{
-display: flex;
-justify-content: center;
-text-align: center;
-
-}
-
-.indexdiv{
+    }
+    
+    
+    
+    
+    /* main */
+    main{
+    grid-area: main;
+    background-color: lightcoral;
+    height: 3fr;
+    
+    }
+    /* Pagina index */
+    .indexmain{
+    
+        display: flex;
+    justify-content: center;
+        align-items: center;
+    }
+    
+    .indexmain p{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    }
-
-.indexmain img{
-    width: 100vh;
-    height: 70vh;
+    text-align: center;
     
     }
-
-
-/* Pagina Servicios */
-.servicios img {
-    display: inline-block;
-    width: 300px;
-    height: 250px;
-    margin-top: 170px;
-    margin-left: 110px;
-    border-radius: 30px;
-    box-shadow: 3px 4px 6px black;
     
-}
-
-.links-servicios a{
-    color: #ffffff;
-    text-decoration: none;
-    list-style: none;
-    }
-       
-    .corte{
+    .indexdiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        }
     
-    margin-left: 235px;
-    }
+    .indexmain img{
+        width: 100vh;
+        height: 70vh;
+        
+        }
     
-    .color{
-    margin-left: 365px;
+    
+    /* Pagina Servicios */
+    .servicios img {
+        display: inline-block;
+        width: 300px;
+        height: 250px;
+        margin-top: 170px;
+        margin-left: 110px;
+        border-radius: 30px;
+        box-shadow: 3px 4px 6px black;
+        
     }
     
-    .barba{
+    .links-servicios a{
+        color: #ffffff;
+        text-decoration: none;
+        list-style: none;
+        }
+           
+        .corte{
+        
+        margin-left: 235px;
+        }
+        
+        .color{
+        margin-left: 365px;
+        }
+        
+        .barba{
+        
+        margin-left: 365px;
+        
+        }
     
-    margin-left: 365px;
+        .dropdown-menu:hover{
+            background-color: rgb(128, 35, 35);
+        }
+        
+        .dropdown-menu a:active{
+            background-color: rgb(151, 36, 36);
+        }
+        .dropdown-menu:active{
+            background-color: rgba(66, 0, 0, 0.849);
+        }
+        
+        .dropdown-menu a{
+            color: black;
+        }
+    
+        .dropdown-menu{
+            background-color: rgb(179, 43, 43);
+        }
+    
+    .servicios a{
+    display: none;
     
     }
-
-    .dropdown-menu:hover{
-        background-color: rgb(128, 35, 35);
-    }
     
-    .dropdown-menu a:active{
-        background-color: rgb(151, 36, 36);
-    }
-    .dropdown-menu:active{
-        background-color: rgba(66, 0, 0, 0.849);
-    }
+    /* Pagina Nosotros */
     
-    .dropdown-menu a{
-        color: black;
-    }
-
-    .dropdown-menu{
-        background-color: rgb(179, 43, 43);
-    }
-
-.servicios a{
-display: none;
-
-}
-
-/* Pagina Nosotros */
-
-.nosotros-imagen{
-margin-top: 45px;
-margin-left: 60px;
-display: flex;
-flex-direction: row;
-}
-
-.nosotros-imagen img{
-width: 600px;
-height: 500px;
-}
-
-.texto-nosotros{
+    .nosotros-imagen{
+    margin-top: 45px;
+    margin-left: 60px;
     display: flex;
     flex-direction: row;
-    text-align: center;
-    font-size: 15px;
-    background-color: rgb(248, 95, 95);
-    width: 600px;
-height: 500px;
-
-}
-
-
-/* PAGINA CORTES */
-#carouselExample{
-width: 500px;
-height: 450px;
-margin: 0 auto;
-margin-top: 40px;
-
-
-}
-
-#carouselExample img{  
-width: 500px;
-height: 450px;
-
-}
-
-.h1-cortes{
-display: flex;
-justify-content: center;
-text-align: center;
-margin-top: 30px;
-font-style: oblique;
+    }
     
-}
-
-/* PAGINA Reservar */
-
-
-.main-reservar{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-
-
-}
-
-.div-reservar{
+    .nosotros-imagen img{
+    width: 600px;
+    height: 500px;
+    }
+    
+    .texto-nosotros{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        font-size: 15px;
+        background-color: rgb(248, 95, 95);
+        width: 600px;
+    height: 500px;
+    
+    }
+    
+    
+    /* PAGINA CORTES */
+    #carouselExample{
+    width: 500px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 40px;
+    
+    
+    }
+    
+    #carouselExample img{  
+    width: 500px;
+    height: 450px;
+    
+    }
+    
+    .h1-cortes{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    font-style: oblique;
+        
+    }
+    
+    /* PAGINA Reservar */
+    
+    
+    .main-reservar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+    }
+    
+    .div-reservar{
+        display: flex;
+        flex-direction: column;
+    margin: 0;
+      margin-right: 150px;
+        
+    }
+    
+    
+    .p1-reservar{
+    background-color: #ffffff;
+    width: 600px;
+    height: 100px;
+        
+    }
+    
+    .p2-reservar{
+        background-color: #ffffff;
+        width: 600px;
+        height: 100px;
+    }
+    
+    .p3-reservar{
+        background-color: #ffffff;
+        width: 600px;
+        height: 100px;
+    }
+    
+    .p4-reservar{
+        background-color: #ffffff;
+        width: 600px;
+    height: 100px;
+    }
+    
+    .main-reservar iframe{
     display: flex;
     flex-direction: column;
-margin: 0;
-  margin-right: 150px;
     
-}
-
-
-.p1-reservar{
-background-color: #ffffff;
-width: 600px;
-height: 100px;
+    }
     
-}
-
-.p2-reservar{
-    background-color: #ffffff;
-    width: 600px;
-    height: 100px;
-}
-
-.p3-reservar{
-    background-color: #ffffff;
-    width: 600px;
-    height: 100px;
-}
-
-.p4-reservar{
-    background-color: #ffffff;
-    width: 600px;
-height: 100px;
-}
-
-.main-reservar iframe{
-display: flex;
-flex-direction: column;
-
-}
-
-
-
-
-
-
-/* footer */
-footer{
-grid-area: footer;
-background-color: rgb(248, 83, 83);
-height: 8vh;
-
-}
-
-.footerr{
-width: 100%;
-height: 100%;
-    display: flex;
-flex-direction: row;
-justify-content: center;
-}
-
-
-
-.igicon {
-width: 20px;
-height: 30px;
-
-
-
-}
-
-
-.wppicon{
+    
+    
+    
+    
+    
+    /* footer */
+    footer{
+    grid-area: footer;
+    background-color: rgb(248, 83, 83);
+    height: .3fr;
+    
+    }
+    
+    .footerr{
+    width: 100%;
+    height: 100%;
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    
+    
+    
+    .igicon {
     width: 20px;
     height: 30px;
     
-}
-
-
-
-/* mediaq desktop */
-@media screen and (max-width: 1200px){
-
-    .navbar-brand{
-        margin-left: 20px; }
-
-        .servicios img{
-            margin-left: 60px;
-        }
-.links-servicios a{
-margin-left: 200px;
-
-}
-.corte{
-
-margin-right: 130px;
- 
-}
-.color{
-    margin-right: 115px;
-}
-
-
-}
-
-@media screen and (max-width: 1100px){
-
-.servicios{
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
-
-    .servicios img{
-        width: 107vh;
-        height: 67vh;
+    
+    
     }
-
-    main {
-        grid-area: main;
-        max-height: 90vh;
-        overflow: auto;
-        margin: 0;
-      }
-      
-      footer {
-        grid-area: footer;
-        height: 20vh;
-        grid-area: footer;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        margin: 0;
-}        
-
-
-
-
-
-}
-
-/* mediaq para tablet */
-@media screen and (max-width: 768px){
-
-   
-.indexdiv img{
-width: 107vh;
-height: 67vh;
-
-    }
-.navbar-brand{
-margin-left: 15px;
-    }
-.container-fluid{
-margin-left: 10px;
-   }
-   .navbar{
-    margin-bottom: 20px;
-   }
-    .menu{
-        background-color: rgb(184, 37, 37);
-    }
-
-    .servicios{
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    
+    
+    .wppicon{
+        width: 20px;
+        height: 30px;
         
     }
-
-    .servicios img{
-        width: 160px;
-        height: 110px;
-        margin: 0;
-        margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-        }
-
-        .servicios a{
-
+    
+    @media screen and (max-width: 1239px){
+    
+       .servicios img{
+    
+        height: 230px;
+        width: 280px;
+       }
             
-            list-style: none;
-color: white;
-text-decoration: none;
-display: flex;
+            
+    
+        .links-servicios a{
+            margin-left: 230px;
+            
+            }
+            .corte{
+            
+            margin-right: 110px;
+             
+            }
+            .color{
+                margin-right: 115px;
+            }
+    
         }
-        .links-servicios{
-            display: none;
+    
+    
+    /* mediaq desktop */
+    @media screen and (max-width: 1200px){
+    
+        .navbar-brand{
+            margin-left: 20px; }
+    
+            .servicios img{
+                margin-left: 90px;
+            }
+    .links-servicios a{
+    margin-left: 200px;
+    
+    }
+    .corte{
+    
+    margin-right: 130px;
+     
+    }
+    .color{
+        margin-right: 115px;
+    }
+    
+    
+    }
+    
+    @media screen and (max-width: 1185px){
+    
+    .servicios img{
+    height: 180px;
+    width: 230px;
+    
+    }
+    
+    
+        .servicios img{
+    
+            margin-right: 50px;
         }
+        .links-servicios a{
+            margin-left: 180px;
+            
+            }
+            .corte{
+            
+            margin-right: 150px;
+             
+            }
+            .color{
+                margin-right: 140px;
+            }
+    
+    
+    }
+    @media screen and (max-width: 1118px){
+    
+        .servicios img{
+            height: 160px;
+            width: 210px;
+            
+            }
+    
+            
+                
+                .corte{
+                
+                margin-right: 115px;
+                 
+                }
+                .color{
+                    margin-right: 130px;
+                }
+    
+    }
+    
+    @media screen and (max-width: 1100px){
+    
+    .servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    
+    
+        .servicios img{
+            width: 67vh;
+            height: 27vh;
+            margin-right: 40px;
+            
+        }
+    
+        .links-servicios a{
+            margin-left: 170px;
+            
+            }
+            .corte{
+            
+            margin-right: 150px;
+             
+            }
+            .color{
+                margin-right: 150px;
+            }
+            
+    
+      
+    
+    
+    
+    
         main {
             grid-area: main;
-            max-height: 90vh;
+            max-height: 3fr;
             overflow: auto;
             margin: 0;
           }
           
           footer {
             grid-area: footer;
-            height: 20vh;
+            height: .3fr;
             grid-area: footer;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             align-items: center;
             margin: 0;
-}        
-       
-        
-        
-   
-  }
-
-  /* mediaq para celular */
-
-@media screen and (max-width: 480px){
-    /* responsive index */
-    .indexdiv img{
-        width: 80vh;
-        height: 50vh;
-            }
-       
-            
-/* responsive servicios
- */
-   .servicios{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 10px;
-
-
-   }         
-
-   .servicios img{
-    width: 190px;
-    height: 140px;
-    margin: 0;
+    }        
     
-   
-
-   }         
-
-.links-servicios a{
-display: none;
-
-margin: 0px;
-
- }
-
- main {
-    grid-area: main;
-    max-height: 90vh;
-    overflow: auto;
+    .nosotros-imagen{
     margin: 0;
-  }
-  
-  footer {
-    grid-area: footer;
-    height: 20vh;
-    grid-area: footer;
+    margin-top: 150px;
+    margin-left: 50px;
+    }
+    
+    .nosotros-imagen img{
+    height: 450px;
+    width: 500px;
+    
+    }
+    
+    .texto-nosotros{
+        height: 450px;
+        width: 500px;
+        font-size:13px;
+        
+    
+    
+    }
+    
+    }
+    
+    @media screen and (max-width: 1024px){
+    
+    
+        .servicios img{
+            height: 160px;
+            width: 210px;
+            
+            }
+    
+            
+                
+                .corte{
+                
+                margin-right: 125px;
+                 
+                }
+                .color{
+                    margin-right: 120px;
+                }
+    
+    
+    
+    
+    }
+    
+    @media screen and (max-width: 960px){
+        .indexdiv img{
+            width: 750px;
+            height: 650px;
+        }
+    
+        .servicios{
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            
+        }
+    
+        .servicios img{
+            width: 250px;
+            height: 150px;
+            margin: 0;
+            margin-top: 40px;
+          display: flex;
+          flex-direction: column;
+            }
+    
+            .servicios a{
+    
+                
+                list-style: none;
+    color: white;
+    text-decoration: none;
+    display: flex;
+            }
+            .links-servicios{
+                display: none;
+            }
+            main {
+                grid-area: main;
+                max-height: 3fr;
+                overflow: auto;
+                margin: 0;
+              }
+              
+              footer {
+                grid-area: footer;
+                height: .3fr;
+                grid-area: footer;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                margin: 0;
+    }        
+           
+    .nosotros-imagen{
+        margin: 0;
+        margin-top: 150px;
+        margin-left: 25px;
+        }
+        
+        .nosotros-imagen img{
+        height: 400px;
+        width: 450px;
+        
+        }
+        
+        .texto-nosotros{
+            height: 400px;
+            width: 450px;
+            font-size:12px;
+            
+        
+        
+        }
+    
+    }
+    
+    /* mediaq para tablet */
+    @media screen and (max-width: 768px){
+    
+       
+    .indexdiv img{
+    width: 700px;
+    height: 600px;
+    
+        }
+    .navbar-brand{
+    margin-left: 15px;
+        }
+    .container-fluid{
+    margin-left: 10px;
+       }
+       .navbar{
+        margin-bottom: 20px;
+       }
+        
+    
+        .servicios{
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            
+        }
+    
+        .servicios img{
+            width: 200px;
+            height: 150px;
+            margin: 0;
+            margin-top: 40px;
+          display: flex;
+          flex-direction: column;
+            }
+    
+            .servicios a{
+    
+                
+                list-style: none;
+    color: white;
+    text-decoration: none;
+    display: flex;
+            }
+            .links-servicios{
+                display: none;
+            }
+            main {
+                grid-area: main;
+                max-height: 3fr;
+                overflow: auto;
+                margin: 0;
+              }
+              
+              footer {
+                grid-area: footer;
+                height: .3fr;
+                grid-area: footer;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                margin: 0;
+    }        
+           
+            
+            
+       
+      }
+    
+    
+      @media screen and (max-width: 700px){
+        .indexdiv img{
+            width: 500px;
+            height: 400px; 
+        }
+            
+    
+    
+      }
+    
+      /* mediaq para celular */
+    
+    @media screen and (max-width: 480px){
+        /* responsive index */
+        .indexdiv img{
+            width: 400px;
+            height: 300px;
+                }
+           
+                
+    /* responsive servicios
+     */
+       .servicios{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    margin: 0;
-
+    margin-top: 50px;
     
-  }
-  .servicios a{
-list-style: none;
-color: white;
-text-decoration: none;
-display: flex;
-
-  }
-
-  
     
-
-
-}
-
-
-
-
-
-
-
-
+       }         
+    
+       .servicios img{
+        width: 190px;
+        height: 140px;
+        margin: 0;
+        margin-bottom: 10px;
+        
+       
+    
+       }         
+    
+    .links-servicios a{
+    display: none;
+    
+    margin: 0px;
+    
+     }
+    
+     main {
+        grid-area: main;
+        max-height: 3fr;
+        overflow: auto;
+        margin: 0;
+        
+      }
+      
+      footer {
+        grid-area: footer;
+        height: .3fr;
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+    
+        
+      }
+      .servicios a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    
+      }
+    
+      
+        /* pagina cortes */
+    
+        #carouselExample{
+            
+    
+            width: 450px;
+            height: 350px;
+    }
+    
+    #carouselExample img{
+        margin-top: 40px;
+    
+    }
+    
+    .h1-cortes{
+    
+        margin-top: 20px;
+    }
+    
+    
+    
+    }
+    
+    
+    @media screen and (max-width: 400px){
+    
+        .indexdiv img{
+            width: 340px;
+            height: 240px;
+                }
+    
+    
+                  /* pagina cortes */
+    
+        #carouselExample {
+            
+    
+            width: 350px;
+            height: 250px;
+    }
+    
+    #carouselExample img{
+        margin-top: 40px;
+    
+    }
+    
+    .h1-cortes{
+    
+        margin-top: 20px;
+    }
+    
+    }
+    
+    
+    @media screen and (max-width: 320px){
+    
+        .indexdiv img{
+            width: 300px;
+            height: 200px;
+                }
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
