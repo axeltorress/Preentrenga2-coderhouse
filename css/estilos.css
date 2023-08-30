@@ -356,7 +356,32 @@
 
             }
     
-            
+            @media screen and (max-width: 1268px){
+
+                .servicios img{
+    
+                    height: 250px;
+                    width: 300px;
+                    margin-left: 80px;
+                   }
+                        
+                        
+                
+                    .links-servicios a{
+                        margin-left: 230px;
+                        
+                        }
+                        .corte{
+                        
+                        margin-right: 160px;
+                         
+                        }
+                        .color{
+                            margin-right: 170px;
+                        }
+
+
+            }
 
     @media screen and (max-width: 1239px){
     
@@ -796,14 +821,14 @@
         #carouselExample{
             
    margin-top: 0;
-            width: 450px;
-            height: 400px;
+            width: 430px;
+            height: 380px;
     }
     
     #carouselExample img{
        
-        width: 450px;
-        height: 400px;
+        width: 430px;
+            height: 380px;
     }
     
     .h1-cortes{
@@ -828,19 +853,22 @@
     
         #carouselExample {
             
-    
-            width: 350px;
-            height: 250px;
+    margin-top: 0;
+            width: 330px;
+            height: 280px;
     }
     
     #carouselExample img{
-        margin-top: 40px;
+        
+        width: 330px;
+        height: 280px;
     
     }
     
     .h1-cortes{
     
         margin-top: 20px;
+        margin-bottom: 130px;
     }
     
     }
@@ -854,7 +882,25 @@
                 }
     
     
-    
+                #carouselExample {
+            
+                    margin-top: 0;
+                            width: 300px;
+                            height: 250px;
+                    }
+                    
+                    #carouselExample img{
+                        
+                        width: 300px;
+                            height: 250px;
+                    
+                    }
+                    
+                    .h1-cortes{
+                    
+                        margin-top: 20px;
+                        margin-bottom: 130px;
+                    }
     
     
     
