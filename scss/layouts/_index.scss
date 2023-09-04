@@ -1,0 +1,27 @@
+ /* Pagina index */
+ .indexmain{
+    
+    display: flex;
+justify-content: center;
+    align-items: center;
+}
+
+.indexmain p{
+display: flex;
+justify-content: center;
+text-align: center;
+
+}
+
+.indexdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+.indexmain img{
+    width: 100vh;
+    height: 70vh;
+    
+    }

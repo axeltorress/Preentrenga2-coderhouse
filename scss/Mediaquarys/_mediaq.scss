@@ -1,0 +1,604 @@
+@media screen and (max-width: 1800px){
+    .servicios img{
+
+        height: 300px;
+        width: 350px;
+        margin-left: 180px;
+       }
+            
+            
+    
+        .links-servicios a{
+            margin-left: 330px;
+            
+            }
+            .corte{
+            
+            margin-right: 160px;
+             
+            }
+            .color{
+                margin-right: 160px;
+            }
+    
+        }
+
+        @media screen and (max-width: 1600px){
+
+            .servicios img{
+
+                height: 300px;
+                width: 350px;
+                margin-left: 80px;
+               }
+                    
+                    
+            
+                .links-servicios a{
+                    margin-left: 230px;
+                    
+                    }
+                    .corte{
+                    
+                    margin-right: 160px;
+                     
+                    }
+                    .color{
+                        margin-right: 170px;
+                    }
+            
+
+
+        }
+
+        @media screen and (max-width: 1268px){
+
+            .servicios img{
+
+                height: 250px;
+                width: 300px;
+                margin-left: 80px;
+               }
+                    
+                    
+            
+                .links-servicios a{
+                    margin-left: 230px;
+                    
+                    }
+                    .corte{
+                    
+                    margin-right: 160px;
+                     
+                    }
+                    .color{
+                        margin-right: 170px;
+                    }
+
+
+        }
+
+@media screen and (max-width: 1239px){
+
+   .servicios img{
+
+    height: 230px;
+    width: 280px;
+   }
+        
+        
+
+    .links-servicios a{
+        margin-left: 230px;
+        
+        }
+        .corte{
+        
+        margin-right: 110px;
+         
+        }
+        .color{
+            margin-right: 115px;
+        }
+
+    }
+
+
+/* mediaq desktop */
+@media screen and (max-width: 1200px){
+
+    .navbar-brand{
+        margin-left: 20px; }
+
+        .servicios img{
+            margin-left: 90px;
+        }
+.links-servicios a{
+margin-left: 200px;
+
+}
+.corte{
+
+margin-right: 130px;
+ 
+}
+.color{
+    margin-right: 115px;
+}
+
+
+}
+
+@media screen and (max-width: 1185px){
+
+.servicios img{
+height: 180px;
+width: 230px;
+
+}
+
+
+    .servicios img{
+
+        margin-right: 50px;
+    }
+    .links-servicios a{
+        margin-left: 180px;
+        
+        }
+        .corte{
+        
+        margin-right: 150px;
+         
+        }
+        .color{
+            margin-right: 140px;
+        }
+
+
+}
+@media screen and (max-width: 1118px){
+
+    .servicios img{
+        height: 160px;
+        width: 210px;
+        
+        }
+
+        
+            
+            .corte{
+            
+            margin-right: 115px;
+             
+            }
+            .color{
+                margin-right: 130px;
+            }
+
+}
+
+@media screen and (max-width: 1100px){
+
+.servicios{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+    .servicios img{
+        width: 67vh;
+        height: 27vh;
+        margin-right: 40px;
+        
+    }
+
+    .links-servicios a{
+        margin-left: 170px;
+        
+        }
+        .corte{
+        
+        margin-right: 150px;
+         
+        }
+        .color{
+            margin-right: 150px;
+        }
+        
+
+  
+
+
+
+
+    main {
+        grid-area: main;
+        max-height: 3fr;
+        overflow: auto;
+        margin: 0;
+      }
+      
+      footer {
+        grid-area: footer;
+        height: .3fr;
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+}        
+
+.nosotros-imagen{
+margin: 0;
+margin-top: 150px;
+margin-left: 50px;
+}
+
+.nosotros-imagen img{
+height: 450px;
+width: 500px;
+
+}
+
+.texto-nosotros{
+    height: 450px;
+    width: 500px;
+    font-size:13px;
+    
+
+
+}
+
+}
+
+@media screen and (max-width: 1024px){
+
+
+    .servicios img{
+        height: 160px;
+        width: 210px;
+        
+        }
+
+        
+            
+            .corte{
+            
+            margin-right: 125px;
+             
+            }
+            .color{
+                margin-right: 120px;
+            }
+
+
+
+
+}
+
+@media screen and (max-width: 960px){
+    .indexdiv img{
+        width: 750px;
+        height: 650px;
+    }
+
+    .servicios{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        
+    }
+
+    .servicios img{
+        width: 250px;
+        height: 150px;
+        margin: 0;
+        margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+        }
+
+        .servicios a{
+
+            
+            list-style: none;
+color: white;
+text-decoration: none;
+display: flex;
+        }
+        .links-servicios{
+            display: none;
+        }
+        main {
+            grid-area: main;
+            max-height: 3fr;
+            overflow: auto;
+            margin: 0;
+          }
+          
+          footer {
+            grid-area: footer;
+            height: .3fr;
+            grid-area: footer;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0;
+}        
+       
+.nosotros-imagen{
+    margin: 0;
+    margin-top: 150px;
+    margin-left: 25px;
+    }
+    
+    .nosotros-imagen img{
+    height: 400px;
+    width: 450px;
+    
+    }
+    
+    .texto-nosotros{
+        height: 400px;
+        width: 450px;
+        font-size:12px;
+        
+    
+    
+    }
+
+}
+
+/* mediaq para tablet */
+@media screen and (max-width: 768px){
+
+   
+.indexdiv img{
+width: 700px;
+height: 600px;
+
+    }
+.navbar-brand{
+margin-left: 15px;
+    }
+.container-fluid{
+margin-left: 10px;
+   }
+   .navbar{
+    margin-bottom: 20px;
+   }
+    
+
+    .servicios{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        
+    }
+
+    .servicios img{
+        width: 200px;
+        height: 150px;
+        margin: 0;
+        margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+        }
+
+        .servicios a{
+
+            
+            list-style: none;
+color: white;
+text-decoration: none;
+display: flex;
+        }
+        .links-servicios{
+            display: none;
+        }
+        main {
+            grid-area: main;
+            max-height: 3fr;
+            overflow: auto;
+            margin: 0;
+          }
+          
+          footer {
+            grid-area: footer;
+            height: .3fr;
+            grid-area: footer;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0;
+}        
+       
+        
+        
+   
+  }
+
+
+  @media screen and (max-width: 700px){
+    .indexdiv img{
+        width: 500px;
+        height: 400px; 
+    }
+        
+
+
+  }
+
+  /* mediaq para celular */
+
+@media screen and (max-width: 480px){
+    /* responsive index */
+    .indexdiv img{
+        width: 400px;
+        height: 300px;
+            }
+       
+            
+/* responsive servicios
+ */
+   .servicios{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+
+
+   }         
+
+   .servicios img{
+    width: 190px;
+    height: 140px;
+    margin: 0;
+    margin-bottom: 10px;
+    
+   
+
+   }         
+
+.links-servicios a{
+display: none;
+
+margin: 0px;
+
+ }
+
+ main {
+    grid-area: main;
+    max-height: 3fr;
+    overflow: auto;
+    margin: 0;
+    
+  }
+  
+  footer {
+    grid-area: footer;
+    height: .3fr;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+
+    
+  }
+  .servicios a{
+list-style: none;
+color: white;
+text-decoration: none;
+display: flex;
+
+  }
+
+  
+    /* pagina cortes */
+
+    #carouselExample{
+        
+margin-top: 0;
+        width: 430px;
+        height: 380px;
+}
+
+#carouselExample img{
+   
+    width: 430px;
+        height: 380px;
+}
+
+.h1-cortes{
+margin-bottom: 130px;
+    margin-top: 20px;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 400px){
+
+    .indexdiv img{
+        width: 340px;
+        height: 240px;
+            }
+
+
+              /* pagina cortes */
+
+    #carouselExample {
+        
+margin-top: 0;
+        width: 330px;
+        height: 280px;
+}
+
+#carouselExample img{
+    
+    width: 330px;
+    height: 280px;
+
+}
+
+.h1-cortes{
+
+    margin-top: 20px;
+    margin-bottom: 130px;
+}
+
+}
+
+
+@media screen and (max-width: 320px){
+
+    .indexdiv img{
+        width: 300px;
+        height: 200px;
+            }
+
+
+            #carouselExample {
+        
+                margin-top: 0;
+                        width: 300px;
+                        height: 250px;
+                }
+                
+                #carouselExample img{
+                    
+                    width: 300px;
+                        height: 250px;
+                
+                }
+                
+                .h1-cortes{
+                
+                    margin-top: 20px;
+                    margin-bottom: 130px;
+                }
+
+
+
+
+}
+
