@@ -44,10 +44,54 @@
     height: 100px;
     }
     
+    
+
     .main-reservar iframe{
     display: flex;
     flex-direction: column;
     
     }
     
+    
+    .container {
+        max-width: 400px;
+        margin: 0 ;
+        margin-right: 100px;
+       
+    }
+
+    .grupo-form {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    select {
+        height: 36px;
+    }
+
+    button {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color:rgb(250, 59, 59);
+    }
     

@@ -20,6 +20,9 @@
             .color{
                 margin-right: 160px;
             }
+
+            
+            
     
         }
 
@@ -356,6 +359,50 @@ display: flex;
     
     }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.main-reservar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-reservar iframe{
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 300px;
+    height: 250px;
+}
+
+main {
+    grid-area: main;
+    max-height: 3fr;
+    overflow: auto;
+    margin: 0;
+  }
+  
+  footer {
+    grid-area: footer;
+    height: .3fr;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+}        
+
+    
 }
 
 /* mediaq para tablet */
@@ -427,7 +474,55 @@ display: flex;
             margin: 0;
 }        
        
-        
+.card1{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+   
+    
+}
+.card2{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    margin-bottom: 50px;
+}
+.card3{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    margin-bottom: 50px;
+    
+}
+
+.card4{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    
+}
+.card5{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-bottom: 50px;
+    
+}
         
    
   }
