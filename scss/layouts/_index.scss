@@ -8,6 +8,21 @@
         width: 1000px;
         height: 500px;
     }
+    
+}
+.promo{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 40px;
+
+
+}
+.promo img{
+width: 450px;
+height: 450px;
+
 }
 
 .boton {
@@ -23,10 +38,14 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    opacity: 0.1;
 
     &:hover {
         background-color: $color-red-boton;
+        opacity: 1;
     }
+
+   
 }
 
 

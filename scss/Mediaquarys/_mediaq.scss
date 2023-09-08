@@ -559,7 +559,11 @@ display: flex;
 
 @media screen and (max-width: 480px){
     /* responsive index */
-    
+    .promo img{
+        width: 300px;
+        height: 300px;
+        
+        }
        
             
 /* responsive servicios

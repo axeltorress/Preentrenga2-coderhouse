@@ -116,6 +116,19 @@ footer {
   height: 500px;
 }
 
+.promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.promo img {
+  width: 450px;
+  height: 450px;
+}
+
 .boton {
   position: absolute;
   top: 108%;
@@ -129,9 +142,11 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  opacity: 0.1;
 }
 .boton:hover {
   background-color: rgb(252, 76, 76);
+  opacity: 1;
 }
 
 /* Pagina Servicios */
@@ -701,6 +716,10 @@ button:hover {
 /* mediaq para celular */
 @media screen and (max-width: 480px) {
   /* responsive index */
+  .promo img {
+    width: 300px;
+    height: 300px;
+  }
   /* responsive servicios
    */
   .servicios {
