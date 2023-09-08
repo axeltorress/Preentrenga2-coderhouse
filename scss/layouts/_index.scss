@@ -1,27 +1,41 @@
  /* Pagina index */
- .indexmain{
-    
-    display: flex;
-justify-content: center;
-    align-items: center;
+ 
+ .index-main {
+    @include flex;
+    margin-top: 70px;
+
+    img {
+        width: 1000px;
+        height: 500px;
+    }
 }
 
-.indexmain p{
-display: flex;
-justify-content: center;
-text-align: center;
+.boton {
+    position: absolute;
+    top: 108%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: $color-red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
+    &:hover {
+        background-color: $color-red-boton;
+    }
 }
 
-.indexdiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    }
 
-.indexmain img{
-    width: 100vh;
-    height: 70vh;
-    
-    }
+
+
+
+
+
+
+
+
+

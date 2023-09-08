@@ -59,6 +59,26 @@ header img {
   font-size: 25px;
 }
 
+.dropdown-menu:hover {
+  background-color: rgb(128, 35, 35);
+}
+
+.dropdown-menu a:active {
+  background-color: rgb(151, 36, 36);
+}
+
+.dropdown-menu:active {
+  background-color: rgba(66, 0, 0, 0.849);
+}
+
+.dropdown-menu a {
+  color: black;
+}
+
+.dropdown-menu {
+  background-color: rgb(179, 43, 43);
+}
+
 /* footer */
 footer {
   grid-area: footer;
@@ -85,28 +105,33 @@ footer {
 }
 
 /* Pagina index */
-.indexmain {
+.index-main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 70px;
+}
+.index-main img {
+  width: 1000px;
+  height: 500px;
 }
 
-.indexmain p {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.boton {
+  position: absolute;
+  top: 108%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-
-.indexdiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.indexmain img {
-  width: 100vh;
-  height: 70vh;
+.boton:hover {
+  background-color: rgb(252, 76, 76);
 }
 
 /* Pagina Servicios */
@@ -114,10 +139,17 @@ footer {
   display: inline-block;
   width: 300px;
   height: 250px;
-  margin-top: 170px;
+  margin-top: 100px;
   margin-left: 110px;
   border-radius: 30px;
   box-shadow: 3px 4px 6px black;
+}
+
+.h1-servicios {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .links-servicios a {
@@ -134,26 +166,6 @@ footer {
 
 .barba {
   margin-left: 365px;
-}
-
-.dropdown-menu:hover {
-  background-color: rgb(128, 35, 35);
-}
-
-.dropdown-menu a:active {
-  background-color: rgb(151, 36, 36);
-}
-
-.dropdown-menu:active {
-  background-color: rgba(66, 0, 0, 0.849);
-}
-
-.dropdown-menu a {
-  color: black;
-}
-
-.dropdown-menu {
-  background-color: rgb(179, 43, 43);
 }
 
 .servicios a {
@@ -173,7 +185,6 @@ footer {
   overflow-y: auto;
   padding: 20px;
 }
-
 .main-nosotros div {
   margin: 0;
 }
@@ -181,59 +192,31 @@ footer {
 .todas-las-cards {
   margin: 0;
 }
-
-.card {
+.todas-las-cards .card {
   margin: 0;
 }
-
-.card1 {
+.todas-las-cards .card1, .todas-las-cards .card2, .todas-las-cards .card3, .todas-las-cards .card4, .todas-las-cards .card5 {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-bottom: 50px;
+}
+.todas-las-cards .card1 {
   margin-right: 400px;
 }
-
-.card2 {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-left: 450px;
-  margin-bottom: 50px;
-}
-
-.card3 {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-right: 400px;
-  margin-bottom: 50px;
-}
-
-.card4 {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 50px;
+.todas-las-cards .card2 {
   margin-left: 450px;
 }
-
-.card5 {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.todas-las-cards .card3 {
   margin-right: 400px;
-  margin-bottom: 50px;
+}
+.todas-las-cards .card4 {
+  margin-left: 450px;
+}
+.todas-las-cards .card5 {
+  margin-right: 400px;
 }
 
 @keyframes show {
@@ -262,7 +245,6 @@ footer {
   margin: 0 auto;
   margin-top: 40px;
 }
-
 #carouselExample img {
   width: 500px;
   height: 450px;
@@ -271,7 +253,7 @@ footer {
 .h1-cortes {
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   margin-top: 30px;
   font-style: oblique;
 }
@@ -279,9 +261,13 @@ footer {
 /* PAGINA Reservar */
 .main-reservar {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+}
+.main-reservar iframe {
+  display: flex;
+  flex-direction: column;
 }
 
 .div-reservar {
@@ -289,30 +275,6 @@ footer {
   flex-direction: column;
   margin: 0;
   margin-right: 150px;
-}
-
-.p1-reservar {
-  background-color: #ffffff;
-  width: 600px;
-  height: 100px;
-}
-
-.p2-reservar {
-  background-color: #ffffff;
-  width: 600px;
-  height: 100px;
-}
-
-.p3-reservar {
-  background-color: #ffffff;
-  width: 600px;
-  height: 100px;
-}
-
-.p4-reservar {
-  background-color: #ffffff;
-  width: 600px;
-  height: 100px;
 }
 
 .main-reservar iframe {
@@ -358,7 +320,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(250, 59, 59);
+  background-color: rgb(252, 76, 76);
 }
 
 @media screen and (max-width: 1800px) {
@@ -536,9 +498,18 @@ button:hover {
   }
 }
 @media screen and (max-width: 960px) {
-  .indexdiv img {
-    width: 750px;
-    height: 650px;
+  .index-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+  }
+  .index-main img {
+    width: 700px;
+    height: 350px;
+  }
+  .boton {
+    top: 108%;
   }
   .servicios {
     display: flex;
@@ -633,10 +604,6 @@ button:hover {
 }
 /* mediaq para tablet */
 @media screen and (max-width: 768px) {
-  .indexdiv img {
-    width: 700px;
-    height: 600px;
-  }
   .navbar-brand {
     margin-left: 15px;
   }
@@ -686,7 +653,13 @@ button:hover {
     align-items: center;
     margin: 0;
   }
-  .card1 {
+  .todas-las-cards {
+    margin: 0;
+  }
+  .todas-las-cards .card {
+    margin: 0;
+  }
+  .todas-las-cards .card1, .todas-las-cards .card2, .todas-las-cards .card3, .todas-las-cards .card4, .todas-las-cards .card5 {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -694,52 +667,40 @@ button:hover {
     flex-direction: column;
     margin-bottom: 50px;
   }
-  .card2 {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
+  .todas-las-cards .card1 {
+    margin-right: 0px;
   }
-  .card3 {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
+  .todas-las-cards .card2 {
+    margin-left: 0px;
   }
-  .card4 {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
+  .todas-las-cards .card3 {
+    margin-right: 0px;
   }
-  .card5 {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
+  .todas-las-cards .card4 {
+    margin-left: 0px;
+  }
+  .todas-las-cards .card5 {
+    margin-right: 0px;
   }
 }
 @media screen and (max-width: 700px) {
-  .indexdiv img {
-    width: 500px;
-    height: 400px;
+  .index-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+  }
+  .index-main img {
+    width: 550px;
+    height: 300px;
+  }
+  .boton {
+    top: 108%;
   }
 }
 /* mediaq para celular */
 @media screen and (max-width: 480px) {
   /* responsive index */
-  .indexdiv img {
-    width: 400px;
-    height: 300px;
-  }
   /* responsive servicios
    */
   .servicios {
@@ -795,12 +756,21 @@ button:hover {
     margin-bottom: 130px;
     margin-top: 20px;
   }
+  .index-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+  }
+  .index-main img {
+    width: 400px;
+    height: 200px;
+  }
+  .boton {
+    top: 88%;
+  }
 }
 @media screen and (max-width: 400px) {
-  .indexdiv img {
-    width: 340px;
-    height: 240px;
-  }
   /* pagina cortes */
   #carouselExample {
     margin-top: 0;
@@ -817,10 +787,6 @@ button:hover {
   }
 }
 @media screen and (max-width: 320px) {
-  .indexdiv img {
-    width: 300px;
-    height: 200px;
-  }
   #carouselExample {
     margin-top: 0;
     width: 300px;

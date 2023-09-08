@@ -19,7 +19,7 @@
   /* main */
   main{
   grid-area: main;
-  background-color: lightcoral;
+  background-color: $color-main;
   height: 3fr;
   
   }
@@ -28,7 +28,7 @@
   /* header */
  header{
     grid-area: header;
-    background-color: rgb(250, 86, 86);
+    background-color: $color-header;
     height: .3fr;
             display: flex;
             flex-wrap: wrap;
@@ -68,10 +68,29 @@
     
     }
 
+    .dropdown-menu:hover{
+        background-color: rgb(128, 35, 35);
+    }
+    
+    .dropdown-menu a:active{
+        background-color: rgb(151, 36, 36);
+    }
+    .dropdown-menu:active{
+        background-color: rgba(66, 0, 0, 0.849);
+    }
+    
+    .dropdown-menu a{
+        color: black;
+    }
+
+    .dropdown-menu{
+        background-color: rgb(179, 43, 43);
+    }
+
     /* footer */
 footer{
     grid-area: footer;
-    background-color: rgb(248, 83, 83);
+    background-color: $color-footer;
     height: .3fr;
     
     }
@@ -87,8 +106,7 @@ footer{
     
     
     .igicon {
-    width: 20px;
-    height: 30px;
+        @include tamaño-iconos;
     
     
     
@@ -96,7 +114,6 @@ footer{
     
     
     .wppicon{
-        width: 20px;
-        height: 30px;
+       @include tamaño-iconos;
         
     }

@@ -1,4 +1,7 @@
 @media screen and (max-width: 1800px){
+   
+    
+    
     .servicios img{
 
         height: 300px;
@@ -56,6 +59,9 @@
 
         @media screen and (max-width: 1268px){
 
+
+
+            
             .servicios img{
 
                 height: 250px;
@@ -284,10 +290,22 @@ width: 500px;
 }
 
 @media screen and (max-width: 960px){
-    .indexdiv img{
-        width: 750px;
-        height: 650px;
+    
+    .index-main {
+        @include flex;
+        margin-top: 200px;
+    
+        img {
+            width: 700px;
+            height: 350px;
+        }
     }
+    .boton {
+        
+        top: 108%;
+        
+    }
+    
 
     .servicios{
 
@@ -409,11 +427,11 @@ main {
 @media screen and (max-width: 768px){
 
    
-.indexdiv img{
-width: 700px;
-height: 600px;
 
-    }
+
+
+
+
 .navbar-brand{
 margin-left: 15px;
     }
@@ -474,67 +492,66 @@ display: flex;
             margin: 0;
 }        
        
-.card1{
+.todas-las-cards {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
-   
-    
-}
-.card2{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   
-    margin-bottom: 50px;
-}
-.card3{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   
-    margin-bottom: 50px;
-    
-}
 
-.card4{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
-    
-}
-.card5{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-    margin-bottom: 50px;
-    
-}
-        
+    .card {
+        margin: 0;
+
+        &1,
+        &2,
+        &3,
+        &4,
+        &5 {
+            margin: 0;
+            @include flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        &1 {
+            margin-right: 0px;
+        }
+
+        &2 {
+            margin-left: 0px;
+        }
+
+        &3 {
+            margin-right: 0px;
+        }
+
+        &4 {
+            margin-left: 0px;
+        }
+
+        &5 {
+            margin-right: 0px;
+        }
+    }
+}  
    
   }
 
 
   @media screen and (max-width: 700px){
-    .indexdiv img{
-        width: 500px;
-        height: 400px; 
-    }
+   
         
-
+    .index-main {
+        @include flex;
+        margin-top: 200px;
+    
+        img {
+            width: 550px;
+            height: 300px;
+        }
+    }
+    .boton {
+        
+        top: 108%;
+        
+    }
+    
 
   }
 
@@ -542,10 +559,7 @@ display: flex;
 
 @media screen and (max-width: 480px){
     /* responsive index */
-    .indexdiv img{
-        width: 400px;
-        height: 300px;
-            }
+    
        
             
 /* responsive servicios
@@ -625,6 +639,20 @@ margin-top: 0;
 margin-bottom: 130px;
     margin-top: 20px;
 }
+.index-main {
+    @include flex;
+    margin-top: 200px;
+
+    img {
+        width: 400px;
+        height: 200px;
+    }
+}
+.boton {
+    
+    top: 88%;
+    
+}
 
 
 
@@ -633,10 +661,7 @@ margin-bottom: 130px;
 
 @media screen and (max-width: 400px){
 
-    .indexdiv img{
-        width: 340px;
-        height: 240px;
-            }
+    
 
 
               /* pagina cortes */
@@ -666,11 +691,7 @@ margin-top: 0;
 
 @media screen and (max-width: 320px){
 
-    .indexdiv img{
-        width: 300px;
-        height: 200px;
-            }
-
+    
 
             #carouselExample {
         

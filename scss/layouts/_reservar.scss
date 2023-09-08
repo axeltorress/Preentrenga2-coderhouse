@@ -2,12 +2,15 @@
     
     
 .main-reservar{
-    display: flex;
+    @include flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     
     
+    iframe{
+        display: flex;
+        flex-direction: column;
+        
+        }
     }
     
     .div-reservar{
@@ -19,31 +22,7 @@
     }
     
     
-    .p1-reservar{
-    background-color: #ffffff;
-    width: 600px;
-    height: 100px;
-        
-    }
-    
-    .p2-reservar{
-        background-color: #ffffff;
-        width: 600px;
-        height: 100px;
-    }
-    
-    .p3-reservar{
-        background-color: #ffffff;
-        width: 600px;
-        height: 100px;
-    }
-    
-    .p4-reservar{
-        background-color: #ffffff;
-        width: 600px;
-    height: 100px;
-    }
-    
+   
     
 
     .main-reservar iframe{
@@ -83,7 +62,7 @@
     }
 
     button {
-        background-color: red;
+        background-color: $color-red;
         color: white;
         padding: 10px 20px;
         border: none;
@@ -92,6 +71,6 @@
     }
 
     button:hover {
-        background-color:rgb(250, 59, 59);
+        background-color: $color-red-boton;
     }
     

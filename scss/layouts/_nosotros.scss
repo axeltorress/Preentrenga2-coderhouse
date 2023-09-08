@@ -12,76 +12,53 @@ margin-bottom: 30px;
     max-height: 100vh; 
     overflow-y: auto; 
     padding: 20px; 
-}
 
-
-
-
-.main-nosotros div{
-    margin: 0;
-}
-.todas-las-cards{
-
+    div{
         margin: 0;
-        
     }
+
+}
+
+
+
+.todas-las-cards {
+    margin: 0;
 
     .card {
         margin: 0;
-        
-        
-        
-            }
 
-    .card1{
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 50px;
-        margin-right: 400px;
-        
-    }
-    .card2{
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-left: 450px;
-        margin-bottom: 50px;
-    }
-    .card3{
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-right: 400px;
-        margin-bottom: 50px;
-        
-    }
+        &1,
+        &2,
+        &3,
+        &4,
+        &5 {
+            margin: 0;
+            @include flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
 
-    .card4{
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 50px;
-        margin-left: 450px;
+        &1 {
+            margin-right: 400px;
+        }
+
+        &2 {
+            margin-left: 450px;
+        }
+
+        &3 {
+            margin-right: 400px;
+        }
+
+        &4 {
+            margin-left: 450px;
+        }
+
+        &5 {
+            margin-right: 400px;
+        }
     }
-    .card5{
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-right: 400px;
-        margin-bottom: 50px;
-        
-    }
+}
 
 @keyframes show{
 from{
