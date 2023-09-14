@@ -380,6 +380,11 @@ th {
   transform: 0.2s ease;
 }
 
+.producto-img {
+  width: 200px;
+  height: 250px;
+}
+
 @media screen and (max-width: 1600px) {
   .servicios img {
     width: 300px;
