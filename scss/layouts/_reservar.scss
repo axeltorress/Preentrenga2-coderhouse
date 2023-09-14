@@ -13,26 +13,10 @@
         }
     }
     
-    .div-reservar{
-        display: flex;
-        flex-direction: column;
-    margin: 0;
-      margin-right: 150px;
-        
-    }
     
     
-   
     
-
-    .main-reservar iframe{
-    display: flex;
-    flex-direction: column;
-    
-    }
-    
-    
-    .container {
+    .containerr {
         max-width: 400px;
         margin: 0 ;
         margin-right: 100px;
@@ -74,3 +58,23 @@
         background-color: $color-red-boton;
     }
     
+    table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 20px auto;
+        background-color: $color-white;
+       
+        
+    }
+    
+    th, td {
+        border: 1px solid $color-black;
+        padding: 8px;
+        text-align: center;
+    }
+    
+    th {
+        background-color: #ff9999;
+    }
+
+  

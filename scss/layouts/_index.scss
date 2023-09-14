@@ -16,14 +16,14 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 margin-top: 40px;
-
+img{
+    width: 450px;
+    height: 450px;
+    
+    }
 
 }
-.promo img{
-width: 450px;
-height: 450px;
 
-}
 
 .boton {
     position: absolute;
@@ -33,7 +33,7 @@ height: 450px;
     padding: 10px 20px;
     font-size: 16px;
     background-color: $color-red;
-    color: #fff;
+    color: $color-white;
     border: none;
     border-radius: 5px;
     cursor: pointer;

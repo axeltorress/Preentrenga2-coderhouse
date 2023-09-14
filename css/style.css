@@ -94,14 +94,18 @@ footer {
   justify-content: center;
 }
 
+.list-unstyled a {
+  color: black;
+}
+
 .igicon {
-  width: 20px;
-  height: 30px;
+  width: 25px;
+  height: 35px;
 }
 
 .wppicon {
-  width: 20px;
-  height: 30px;
+  width: 25px;
+  height: 35px;
 }
 
 /* Pagina index */
@@ -123,7 +127,6 @@ footer {
   flex-direction: column;
   margin-top: 40px;
 }
-
 .promo img {
   width: 450px;
   height: 450px;
@@ -137,7 +140,7 @@ footer {
   padding: 10px 20px;
   font-size: 16px;
   background-color: red;
-  color: #fff;
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -155,7 +158,7 @@ footer {
   width: 300px;
   height: 250px;
   margin-top: 100px;
-  margin-left: 110px;
+  margin-left: 105px;
   border-radius: 30px;
   box-shadow: 3px 4px 6px black;
 }
@@ -168,19 +171,19 @@ footer {
 }
 
 .links-servicios a {
-  color: #ffffff;
+  color: white;
 }
 
-.corte {
-  margin-left: 235px;
+.links-servicios {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
-
-.color {
-  margin-left: 365px;
+.links-servicios .barba {
+  margin-right: 40px;
 }
-
-.barba {
-  margin-left: 365px;
+.links-servicios .corte {
+  margin-left: 40px;
 }
 
 .servicios a {
@@ -285,19 +288,7 @@ footer {
   flex-direction: column;
 }
 
-.div-reservar {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  margin-right: 150px;
-}
-
-.main-reservar iframe {
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
+.containerr {
   max-width: 400px;
   margin: 0;
   margin-right: 100px;
@@ -338,67 +329,110 @@ button:hover {
   background-color: rgb(252, 76, 76);
 }
 
-@media screen and (max-width: 1800px) {
-  .servicios img {
-    height: 300px;
-    width: 350px;
-    margin-left: 180px;
-  }
-  .links-servicios a {
-    margin-left: 330px;
-  }
-  .corte {
-    margin-right: 160px;
-  }
-  .color {
-    margin-right: 160px;
-  }
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: white;
 }
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #ff9999;
+}
+
+.div-producto {
+  height: auto;
+  background-color: rgb(172, 80, 80);
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  border: 2px dashed white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.div-titulo {
+  font-size: 22px;
+  text-align: center;
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.boton-precio {
+  padding: 10px;
+  background-color: rgb(252, 76, 76);
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid white;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  transition: background-color 0.8s ease;
+  transform: 0.2s ease;
+}
+
 @media screen and (max-width: 1600px) {
   .servicios img {
-    height: 300px;
-    width: 350px;
-    margin-left: 80px;
-  }
-  .links-servicios a {
-    margin-left: 230px;
+    width: 300px;
+    height: 250px;
+    margin-left: 170px;
   }
   .corte {
-    margin-right: 160px;
+    margin-left: 75px;
   }
-  .color {
-    margin-right: 170px;
+  .barba {
+    margin-right: 75px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .servicios img {
+    width: 250px;
+    height: 200px;
+    margin-left: 160px;
+  }
+}
+@media screen and (max-width: 1368px) {
+  .servicios img {
+    width: 300px;
+    height: 250px;
+    margin-top: 100px;
+    margin-left: 105px;
+  }
+  .links-servicios a {
+    color: #ffffff;
+  }
+  .links-servicios {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .barba {
+    margin-right: 40px;
+  }
+  .corte {
+    margin-left: 40px;
   }
 }
 @media screen and (max-width: 1268px) {
   .servicios img {
-    height: 250px;
-    width: 300px;
-    margin-left: 80px;
-  }
-  .links-servicios a {
-    margin-left: 230px;
+    width: 250px;
+    height: 200px;
+    margin-left: 125px;
   }
   .corte {
-    margin-right: 160px;
+    margin-left: 60px;
   }
-  .color {
-    margin-right: 170px;
-  }
-}
-@media screen and (max-width: 1239px) {
-  .servicios img {
-    height: 230px;
-    width: 280px;
-  }
-  .links-servicios a {
-    margin-left: 230px;
-  }
-  .corte {
-    margin-right: 110px;
-  }
-  .color {
-    margin-right: 115px;
+  .barba {
+    margin-right: 60px;
   }
 }
 /* mediaq desktop */
@@ -407,68 +441,20 @@ button:hover {
     margin-left: 20px;
   }
   .servicios img {
-    margin-left: 90px;
-  }
-  .links-servicios a {
-    margin-left: 200px;
-  }
-  .corte {
-    margin-right: 130px;
-  }
-  .color {
-    margin-right: 115px;
-  }
-}
-@media screen and (max-width: 1185px) {
-  .servicios img {
-    height: 180px;
-    width: 230px;
-  }
-  .servicios img {
-    margin-right: 50px;
-  }
-  .links-servicios a {
-    margin-left: 180px;
-  }
-  .corte {
-    margin-right: 150px;
-  }
-  .color {
-    margin-right: 140px;
+    width: 250px;
+    height: 200px;
+    margin-left: 110px;
   }
 }
 @media screen and (max-width: 1118px) {
   .servicios img {
-    height: 160px;
-    width: 210px;
-  }
-  .corte {
-    margin-right: 115px;
-  }
-  .color {
-    margin-right: 130px;
+    width: 230px;
+    height: 180px;
+    margin-left: 100px;
+    margin-top: 110px;
   }
 }
 @media screen and (max-width: 1100px) {
-  .servicios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .servicios img {
-    width: 67vh;
-    height: 27vh;
-    margin-right: 40px;
-  }
-  .links-servicios a {
-    margin-left: 170px;
-  }
-  .corte {
-    margin-right: 150px;
-  }
-  .color {
-    margin-right: 150px;
-  }
   main {
     grid-area: main;
     max-height: 3fr;
@@ -502,14 +488,16 @@ button:hover {
 }
 @media screen and (max-width: 1024px) {
   .servicios img {
-    height: 160px;
-    width: 210px;
+    width: 230px;
+    height: 180px;
+    margin-left: 80px;
+    margin-top: 130px;
   }
   .corte {
-    margin-right: 125px;
+    margin-left: 30px;
   }
-  .color {
-    margin-right: 120px;
+  .barba {
+    margin-right: 30px;
   }
 }
 @media screen and (max-width: 960px) {

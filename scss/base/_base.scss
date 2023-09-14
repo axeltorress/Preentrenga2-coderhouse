@@ -102,17 +102,17 @@ footer{
         flex-direction: row;
         justify-content: center;
         }
+       
+        .list-unstyled a{
+color: $color-black
+
+        }
         
-    
     
     .igicon {
         @include tamaño-iconos;
-    
-    
-    
+ 
     }
-    
-    
     .wppicon{
        @include tamaño-iconos;
         
