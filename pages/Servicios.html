@@ -82,7 +82,52 @@
 
   </div>
 
-
+  <section class="test-container">
+    <h2>Test de Estilo - ¿Qué Estilo Te Define?</h1>
+    <form id="style-test">
+        <div class="question">
+            <p>1. ¿Qué longitud de pelo prefieres?</p>
+            <label>
+                <input type="radio" name="length" value="corto"> Corto
+            </label>
+            <label>
+                <input type="radio" name="length" value="medio"> Medio
+            </label>
+            <label>
+                <input type="radio" name="length" value="largo"> Largo
+            </label>
+        </div>
+        <div class="question">
+            <p>2. ¿Qué tipo de barba te gusta?</p>
+            <label>
+                <input type="radio" name="beard" value="limpio"> Limpio
+            </label>
+            <label>
+                <input type="radio" name="beard" value="sombreado"> Sombreado
+            </label>
+            <label>
+                <input type="radio" name="beard" value="lleno"> Lleno
+            </label>
+        </div>
+        <div class="question">
+            <p>3. ¿Qué estilo de corte de pelo te atrae más?</p>
+            <label>
+                <input type="radio" name="haircut" value="clasico"> Clásico
+            </label>
+            <label>
+                <input type="radio" name="haircut" value="moderno"> Moderno
+            </label>
+            <label>
+                <input type="radio" name="haircut" value="atrevido"> Atrevido
+            </label>
+        </div>
+        <button type="submit">Obtener Resultado</button>
+    </form>
+    <div id="result" class="hidden">
+        <h2>Tu Estilo Recomendado:</h2>
+        <p id="style-result"></p>
+    </div>
+  </section>
 
 </main>
 

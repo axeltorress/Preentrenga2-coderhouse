@@ -85,4 +85,31 @@ to{
         animation-range: entry 25% cover 30%;
         animation-fill-mode: both;} 
 
- 
+        .faq-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .faq-item {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
