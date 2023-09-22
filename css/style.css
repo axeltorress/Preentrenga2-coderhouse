@@ -351,6 +351,32 @@ p {
   font-style: oblique;
 }
 
+.galeria {
+  margin-right: 25px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  column-gap: 20px;
+}
+
+.foto {
+  height: auto;
+  background-color: rgb(185, 82, 82);
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  border: 2px white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.foto img {
+  max-width: 65%;
+  height: auto;
+  display: block;
+}
+
 /* PAGINA Reservar */
 .main-reservar {
   display: flex;
@@ -421,6 +447,14 @@ th {
   background-color: #ff9999;
 }
 
+.h1-producto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .div-producto {
   height: auto;
   background-color: rgb(172, 80, 80);
@@ -431,6 +465,7 @@ th {
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
+  margin: 10px 60px;
 }
 
 .div-titulo {
@@ -460,6 +495,13 @@ th {
   height: 250px;
 }
 
+@media screen and (max-width: 1800px) {
+  .servicios img {
+    width: 300px;
+    height: 250px;
+    margin-left: 220px;
+  }
+}
 @media screen and (max-width: 1600px) {
   .servicios img {
     width: 300px;
@@ -524,6 +566,14 @@ th {
     width: 250px;
     height: 200px;
     margin-left: 110px;
+  }
+  .galeria {
+    margin-right: 25px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    margin-left: 20px;
   }
 }
 @media screen and (max-width: 1118px) {

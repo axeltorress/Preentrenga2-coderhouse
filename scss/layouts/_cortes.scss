@@ -21,3 +21,31 @@
     font-style: oblique;
         
     }
+
+    
+.galeria {
+    margin-right: 25px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+}
+
+.foto {
+    height: auto;
+    background-color: rgb(185, 82, 82);
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    border: 2px  white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.foto img {
+    max-width: 65%;
+    height: auto;
+    display: block;
+}
